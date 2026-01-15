@@ -1,52 +1,47 @@
 # Do App Ratings Lie?
-### Exploratory Data Analysis of Google Play Store Apps
 
-## 📌 Overview
-App ratings are often used as a proxy for quality, but do they actually reflect real user satisfaction?
-This project performs an exploratory data analysis (EDA) on Google Play Store apps to investigate
-whether app ratings are influenced by factors such as review count, pricing model, app category,
-and install volume.
+## About this project
+When we choose apps from the Play Store, we often trust the star rating without thinking twice.
+This project looks a little deeper.
 
-The goal is not to build a predictive model, but to uncover patterns, biases, and limitations
-in how ratings should be interpreted.
+The goal of this analysis is to understand whether app ratings actually represent user satisfaction,
+or whether they are influenced by factors like the number of reviews, whether an app is free or paid,
+and the category it belongs to.
 
----
-
-## 📊 Dataset
-- **Source:** Google Play Store Apps dataset (Kaggle)
-- **Link:** https://www.kaggle.com/datasets/lava18/google-play-store-apps
-
-Due to licensing restrictions, the raw dataset is not included in this repository.
-Please download `googleplaystore.csv` from the source link to reproduce the analysis.
-
-- **Key Columns Used:**
-  - Category
-  - Rating
-  - Reviews
-  - Installs
-  - Type (Free / Paid)
-  - Price
-  - Size
+This is an exploratory data analysis (EDA) project focused on understanding patterns and limitations
+in app ratings, not on building prediction models.
 
 ---
 
-## 🔍 Key Questions Explored
-- Do apps with more reviews have more reliable ratings?
-- Are free apps rated differently than paid apps?
-- Which categories appear overrated or underrated?
-- Does app size or install count influence user ratings?
+## Dataset
+The dataset used in this project is the Google Play Store Apps dataset from Kaggle.
+
+Link to dataset:  
+https://www.kaggle.com/datasets/lava18/google-play-store-apps
+
+The raw data file is not included in this repository.  
+Please download `googleplaystore.csv` from the link above to run the notebook.
 
 ---
 
-## 📈 Major Insights
-- App ratings are heavily skewed toward higher values, indicating possible rating inflation.
-- Ratings from apps with very few reviews tend to be more extreme and less reliable.
-- Paid apps show lower variance in ratings compared to free apps.
-- Category-wise average ratings can be misleading without considering sample size.
+## What I explored
+- How app ratings are distributed across the Play Store
+- Whether apps with more reviews have more reliable ratings
+- Differences in ratings between free and paid apps
+- Rating behavior across different app categories
+- The relationship between installs, reviews, and ratings
 
 ---
 
-## 🛠 Tools & Libraries
+## Key observations
+- Most app ratings are clustered at the higher end, suggesting rating inflation
+- Apps with very few reviews often show extreme ratings
+- Paid apps tend to have more consistent ratings than free apps
+- Category-wise average ratings can be misleading without considering sample size
+
+---
+
+## Tools used
 - Python
 - Pandas
 - NumPy
@@ -55,12 +50,6 @@ Please download `googleplaystore.csv` from the source link to reproduce the anal
 
 ---
 
-## 📌 Conclusion
-This analysis highlights that app ratings alone are not a sufficient measure of quality.
-Review volume and contextual factors play a critical role in interpreting user feedback.
-Such insights are valuable for users, developers, and product analysts when making decisions
-based on app ratings.
-
----
-
-
+## Final note
+This project helped me practice asking the right questions before jumping to conclusions.
+It shows that ratings alone are not always enough to judge app quality, and context matters.
